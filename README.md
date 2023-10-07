@@ -3,7 +3,7 @@ Aplicacion web, bienes raices
 
 ### main: Backend con NodeJS
 ### master: Frontend con vueJS
-=======
+===
 # frontend
 
 ## Project setup
