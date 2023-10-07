@@ -100,7 +100,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  mode: '',
+  mode: 'history',
   history: createWebHistory(),
   routes,
 });
