@@ -105,7 +105,7 @@
                             variant="solo"></v-text-field>
                         <div class="btnsRegister d-flex" style="justify-content: space-around;">
                             <v-btn class="btnCreat" height="40" type="submit">Crear Cuenta</v-btn>
-                            <V-btn class="btnLogin" height="40" to="/auth/login">Iniciar sesion</V-btn>
+                            <V-btn class="btnLogin mb-5" height="40" to="/auth/login">Iniciar sesion</V-btn>
                         </div>
                     </v-form>
                 </div>
