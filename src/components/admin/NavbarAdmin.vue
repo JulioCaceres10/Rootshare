@@ -3,7 +3,7 @@
     <v-app-bar class="px-5" elevation="1">
         <v-app-bar-title class="d-flex">
             <router-link  to="/">
-                <v-img class="" src="../../assets/IMG/logo.png" style="height: 40px; display: inline-flex; "></v-img> 
+                <v-img class="" src="../../assets/logo.png" style="height: 40px; display: inline-flex; "></v-img> 
             </router-link>
 
         </v-app-bar-title>
