@@ -89,7 +89,7 @@ const routes = [
 
   // pagina 404
   {
-    path: "/:notfound(.*)*",
+    path: "/:notfound",
     name: "notfound",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
