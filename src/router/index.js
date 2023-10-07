@@ -100,7 +100,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/app'),
   routes,
 });
 router.beforeEach(async (to, from, next) => {
