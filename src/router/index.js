@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import store from "@/store";
 import authToken from "@/middleware/index.js";
 import SignUpView from "../views/auth/SignUpView.vue";
