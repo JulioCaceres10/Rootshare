@@ -3,7 +3,7 @@
 
         <v-app-bar-title class="text-center">
             <router-link to="/" style="height: 400px; ">
-                <v-img class="logoNavAuth" src="../../assets/IMG/logo.png" style="height: 40px; display: inline-flex;"></v-img>
+                <v-img class="logoNavAuth" src="../../assets/logo.png" style="height: 40px; display: inline-flex;"></v-img>
             </router-link>
         </v-app-bar-title>
 
