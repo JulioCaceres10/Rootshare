@@ -1,7 +1,7 @@
 <template>
     <!-- Navbar -->
     <v-app-bar class="px-5" elevation="1">
-       <v-app-bar-title class="text-center">
+       <v-app-bar-title>
             <router-link to="/" class="text-decoration-none text-green-darken-4 font-weight-light"  style="height: 400px; font-size: 30px "> Rootshare
             </router-link>
         </v-app-bar-title>
