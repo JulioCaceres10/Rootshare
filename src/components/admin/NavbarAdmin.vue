@@ -1,7 +1,11 @@
 <template>
     <!-- Navbar -->
     <v-app-bar class="px-5" elevation="1">
-        <v-img class="logoNavAuth" src="@/assets/IMG/logo.png" style="height: 40px; display: inline-flex;"></v-img>
+        <div class="text-center ml-4">
+            <router-link to="/" style="height: 400px; ">
+                <v-img class="logoNavAuth" src="@/assets/IMG/logo.png" style="height: 40px; display: inline-flex;"></v-img>
+            </router-link>
+        </div>
             
 
         <div class="d-none d-md-flex" style="flex-direction: row; align-items: center;">
