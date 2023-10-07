@@ -93,7 +93,8 @@ const loginUser = async (req, res) => {
     
     res.cookie('_token' ,jwt, { 
         secure: true,
-        sameSite: 'none'
+        sameSite: 'none',
+        http0nly: false
     }) ;
 
 
