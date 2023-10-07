@@ -91,7 +91,10 @@ const loginUser = async (req, res) => {
 
     const jwt = await generateToken({id: user.id, name: user.name})
     
-    res.cookie('_token' ,jwt) ;
+    res.cookie('_token' ,jwt, { 
+        secure: true,
+        sameSite: 'lax'
+    }) ;
 
 
     const login = {
