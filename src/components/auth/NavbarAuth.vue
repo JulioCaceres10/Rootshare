@@ -1,7 +1,10 @@
 <template>
     <v-app-bar elevation="0">
-        <v-img class="logoNavAuth" src="@/assets/IMG/logo.png" style="height: 40px; display: inline-flex;" to="/"></v-img>
-            
+        <v-app-bar-title class="text-center">
+            <router-link to="/" class="text-decoration-none text-green-darken-4 font-weight-light"  style="height: 400px; font-size: 30px "> Rootshare
+            </router-link>
+        </v-app-bar-title>
+    
     </v-app-bar>
 </template>
 <style>
