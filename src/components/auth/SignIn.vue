@@ -167,7 +167,7 @@ const submit = handleSubmit(async values => {
 })
 
 onBeforeMount(() => {
-    if(store.state.token !== null ) router.replace({ name: 'dashboard' })
+    if(store.state.token !== null ) return router.replace({ name: 'dashboard' })
 })
 
 
