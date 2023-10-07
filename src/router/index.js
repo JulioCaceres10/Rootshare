@@ -101,7 +101,7 @@ const routes = [
 
 const router = createRouter({
   mode: 'history',
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 router.beforeEach(async (to, from, next) => {
