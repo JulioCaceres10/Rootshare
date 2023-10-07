@@ -2,8 +2,8 @@
     <!-- Navbar -->
     <v-app-bar class="px-5" elevation="1">
         <v-app-bar-title class="d-flex">
-            <router-link  to="/">
-                <v-img class="" src="https://res.cloudinary.com/dgaj83nvk/image/upload/v1696657337/rootshare/eglocfpdothyjwhmukkq.png" style="height: 40px; display: inline-flex; "></v-img> 
+            <router-link to="/" style="height: 400px; ">
+                <v-img class="logoNavAuth" src="@/assets/logo.png" style="height: 40px; display: inline-flex;"></v-img>
             </router-link>
 
         </v-app-bar-title>
