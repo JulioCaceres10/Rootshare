@@ -1,7 +1,7 @@
 <template>
     <!-- Navbar -->
     <v-app-bar class="px-5" elevation="1">
-        <v-app-bar-title class="text-center">
+        <v-app-bar-title>
             <router-link to="/" style="height: 400px; "> ROOTSHARE
                 <v-img class="logoNavAuth" src="@/assets/IMG/logo.png" style="height: 40px; display: inline-flex;"></v-img>
             </router-link>
