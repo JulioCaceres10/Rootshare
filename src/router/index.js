@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import store from "@/store";
 import authToken from "@/middleware/index.js";
 import SignUpView from "../views/auth/SignUpView.vue";
@@ -100,7 +100,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 router.beforeEach(async (to, from, next) => {
