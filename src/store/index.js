@@ -32,8 +32,10 @@ export default createStore({
     async authToken({ commit }) {
       if ($cookies.get("_token")) {
         await commit("setToken", $cookies.get("_token"));
+        console.log('si')
       } else {
-        await commit("setToken", false);
+        await commit("setToken", '');
+        console.log('no')
       }
     },
 
