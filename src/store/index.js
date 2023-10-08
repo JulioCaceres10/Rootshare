@@ -34,7 +34,7 @@ export default createStore({
         await commit("setToken", $cookies.get("_token"));
         console.log('si')
       } else {
-        await commit("setToken", '');
+        await commit("setToken", false);
         console.log('no')
       }
     },
