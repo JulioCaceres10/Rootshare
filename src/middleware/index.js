@@ -12,7 +12,7 @@ const authToken = async (token) => {
     .then(async (response) => {
       const resDB = await response.json();
       if (resDB.error) {
-        store.commit("setToken", false);
+        store.commit("setToken", null);
         error = resDB.error
         
       }
