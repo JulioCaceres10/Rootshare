@@ -10,7 +10,7 @@ const authUser = async (req, res, next) => {
     
     // validar el token del usuario
     try {
-        if(token === false) {
+        if(!token) {
             req.user = null
             console.log("entro")
             return next()
