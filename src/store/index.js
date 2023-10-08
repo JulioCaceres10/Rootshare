@@ -5,7 +5,7 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     dialogProperties: false,
-    token: '',
+    token: null,
     dataBase: [],
     dashboardDB: []
   },
@@ -34,7 +34,7 @@ export default createStore({
         await commit("setToken", $cookies.get("_token"));
         console.log('si')
       } else {
-        await commit("setToken", false);
+        await commit("setToken", null);
         console.log('no')
       }
     },
