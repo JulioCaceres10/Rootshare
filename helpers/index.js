@@ -1,6 +1,6 @@
 const owner = (userId, propertyId) => {
-    return userId === propertyId
     console.log(userId, propertyId)
+    return userId === propertyId
 }
 
 export default owner;
