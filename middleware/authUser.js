@@ -3,10 +3,10 @@ import User from '../models/User.js';
 
 const authUser = async (req, res, next) => {
     // identificar si existe Token
-    const _token = req.header('authToken') || false
+    const _token = req.header('authToken')
     console.log(_token)
     
-    if(!_token) {
+    if(_token === null) {
         req.user = null
         return next()
     }
