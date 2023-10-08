@@ -227,7 +227,7 @@ onMounted(async () => {
         method: "GET",
         credentials: "include",
         headers: {
-            'authToken': store.state.token
+            'authToken': $cookies.get("_token")
         },
     })
     try {
