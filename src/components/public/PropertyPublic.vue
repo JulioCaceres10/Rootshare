@@ -226,6 +226,9 @@ onMounted(async () => {
     const response = await fetch(`https://api-rootshare.onrender.com/public/property/${route.params.id}`, {
         method: "GET",
         credentials: "include",
+        headers: {
+            'authToken': store.state.token
+        },
     })
     try {
         const resDB = await response.json()
@@ -236,7 +239,6 @@ onMounted(async () => {
         category.value = resDB.data.category
         price.value = resDB.data.price
         propertyOwner.value = resDB.owner
-        console.log(resDB.owner)
     } catch (error) {
         console.log(error)
     }
