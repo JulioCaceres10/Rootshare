@@ -255,7 +255,10 @@ const postProperty = (e, item) => {
 const messagesProperty = async (id) => {
     await fetch(`https://api-rootshare.onrender.com/public/messages/${id}`,{
       method: "GET",
-      credentials: 'include'
+      credentials: 'include',
+      headers: {
+            'authToken': store.state.token
+        },
     })
     .then( async response => {
       const res = await response.json()
