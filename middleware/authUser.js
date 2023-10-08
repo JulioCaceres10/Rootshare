@@ -6,14 +6,15 @@ const authUser = async (req, res, next) => {
     const token = await req.header('authToken')
     console.log(token)
     
-    if(token === false) {
-        req.user = null
-        console.log("entro")
-        return next()
-    }
+    
     
     // validar el token del usuario
     try {
+        if(token === false) {
+            req.user = null
+            console.log("entro")
+            return next()
+        }
         const decoded = jwt.verify(token, process.env.SECRET_TOKEN)
 
         const user = await User.scope('deleteAttributes').findByPk(decoded.id)
