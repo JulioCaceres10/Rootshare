@@ -149,7 +149,7 @@
                         :to="{ name: 'property', params: { id: item.id } }">
 
                         <v-img :src="item.image" height="200" cover></v-img>
-                        <v-card-title class="text-subtitle-2 font-weight-bold py-0">{{ item.title }}</v-card-title>
+                        <v-card-title class="py-0">{{ item.title }}</v-card-title>
                         <v-card-subtitle>{{ item.price.name }}</v-card-subtitle>
                         <v-card-text class="d-flex">
                             <div class="mx-4 px-4 text-center">
