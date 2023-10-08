@@ -242,7 +242,7 @@ const dialogDeleteProperty = (e, id) => {
 const dialogMessagesProperty = (e, id) => {
   showMessages.value = e
   if(e) return messagesProperty(id)
-
+  messages.value = null
 }
 
 // mostrar dialogo para publicar o dejar de estar publica una propiedad
