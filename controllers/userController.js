@@ -91,17 +91,14 @@ const loginUser = async (req, res) => {
 
     const jwt = await generateToken({id: user.id, name: user.name})
     
-    res.cookie('_token' ,jwt, { 
-        secure: true,
-        sameSite: 'lax'
-    }) ;
 
 
     const login = {
         text: 'Inicio de sesion exitoso',
         icon: 'mdi:mdi-check-circle',
         color: 'blue',
-        boolean: true
+        boolean: true,
+        token: jwt
     }
     return res.json(login)
 }
