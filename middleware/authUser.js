@@ -3,10 +3,10 @@ import User from '../models/User.js';
 
 const authUser = async (req, res, next) => {
     // identificar si existe Token
-    const _token = req.header('authToken')
-    console.log(_token)
+    const token = req.header('authToken')
+    console.log(token)
     
-    if(!_token) {
+    if(!token) {
         req.user = null
         console.log("entro")
         return next()
@@ -14,7 +14,7 @@ const authUser = async (req, res, next) => {
     
     // validar el token del usuario
     try {
-        const decoded = jwt.verify(_token, process.env.SECRET_TOKEN)
+        const decoded = jwt.verify(token, process.env.SECRET_TOKEN)
 
         const user = await User.scope('deleteAttributes').findByPk(decoded.id)
         if(user) {
