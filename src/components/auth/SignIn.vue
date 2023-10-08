@@ -158,9 +158,8 @@ const submit = handleSubmit(async values => {
             // respuesta del backend
             const resDB = await response.json()
             snackbar.value = resDB
+            $cookies.set('_token', resDB.token,'1d',null,null,true,null)
             await store.commit('setToken', $cookies.get('_token') || null)
-            console.log(document.cookie)
-            console.log($cookies.get('_token'))
             if(store.state.token !== null) return router.push({ name: 'dashboard' })
         })
         .catch(err => console.log(err))
