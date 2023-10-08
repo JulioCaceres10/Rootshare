@@ -225,9 +225,8 @@ const sendMessage = async () => {
 onMounted(async () => {
     const response = await fetch(`https://api-rootshare.onrender.com/public/property/${route.params.id}`, {
         method: "GET",
-        credentials: "include",
         headers: {
-            'authToken': $cookies.get("_token")
+            'authToken': store.state.token
         },
     })
     try {
