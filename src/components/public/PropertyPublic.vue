@@ -236,6 +236,7 @@ onMounted(async () => {
         category.value = resDB.data.category
         price.value = resDB.data.price
         propertyOwner.value = resDB.owner
+        console.log(resDB.owner)
     } catch (error) {
         console.log(error)
     }
