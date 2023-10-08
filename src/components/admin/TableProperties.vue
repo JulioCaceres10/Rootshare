@@ -262,6 +262,7 @@ const messagesProperty = async (id) => {
     })
     .then( async response => {
       const res = await response.json()
+      console.log(res.lenght)
       messages.value = res
     })
     .catch(err => console.log(err))
