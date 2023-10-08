@@ -6,8 +6,9 @@ const authUser = async (req, res, next) => {
     const _token = req.header('authToken')
     console.log(_token)
     
-    if(_token === null) {
+    if(_token = null) {
         req.user = null
+        console.log("entro")
         return next()
     }
     
