@@ -5,8 +5,9 @@ const authUser = async (req, res, next) => {
     // identificar si existe Token
     const token = req.header('authToken')
     console.log(token)
+    const toke = false
     
-    if(!token) {
+    if(!toke) {
         req.user = null
         console.log("entro")
         return next()
