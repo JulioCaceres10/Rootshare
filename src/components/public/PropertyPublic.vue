@@ -50,7 +50,7 @@
                 </v-container>
             </v-col>
 
-            <v-col cols="12" md="8">
+            <v-col cols="12" md="7">
                 <v-container>
                     <v-card elevation="0">
                         <v-img class="d-none d-md-flex mb-5" :src="property.image" alt="Imagen de la propiedad" height="530"
@@ -77,7 +77,7 @@
 
             </v-col>
 
-            <v-col sm="5" md="4" class="my-5 d-none d-sm-none d-md-flex">
+            <v-col sm="5" md="5" class="my-5 d-none d-sm-none d-md-flex">
                 <v-card class="pa-4" width="320" style="position: fixed;">
                     <v-card-subtitle class=" py-0 font-weight-bold">{{ category.name }}</v-card-subtitle>
                     <v-card-title class="text-h5 truncate py-0 font-weight-bold">{{ property.title }}</v-card-title>
