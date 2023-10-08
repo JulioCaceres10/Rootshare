@@ -5,7 +5,7 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     dialogProperties: false,
-    token: null,
+    token: '',
     dataBase: [],
     dashboardDB: []
   },
