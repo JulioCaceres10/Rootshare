@@ -33,7 +33,7 @@ export default createStore({
       if ($cookies.get("_token")) {
         await commit("setToken", $cookies.get("_token"));
       } else {
-        await commit("setToken", undefined);
+        await commit("setToken", null);
       }
     },
 
