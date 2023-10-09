@@ -7,7 +7,7 @@ const protectRoute = async (req, res, next) => {
     
 
     // verificar token
-    if(!token) return res.status(400).json({error: 'acceso denegado'})
+    if(!token) return res.status(400).json({error: true})
 
     // validar token
     try {
