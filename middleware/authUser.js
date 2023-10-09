@@ -3,14 +3,14 @@ import User from '../models/User.js';
 
 const authUser = async (req, res, next) => {
     // identificar si existe Token
-    const token = res.cookies
-    console.log(token)
+    const {_token} = res.cookies
+    console.log(_token)
     
     
     
     // validar el token del usuario
     try {
-        if(!token) {
+        if(!_token) {
             req.user = null
             console.log("entro")
             return next()
