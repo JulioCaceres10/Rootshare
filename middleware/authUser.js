@@ -6,15 +6,14 @@ const authUser = async (req, res, next) => {
     const token = req.header('authToken')
     console.log(token)
     
-    
-    
     // validar el token del usuario
-    try {
-        if(!token) {
+    if(!token) {
             req.user = null
             console.log("entro")
             return next()
         }
+    try {
+        
         const decoded = jwt.verify(token, process.env.SECRET_TOKEN)
         if(decoded) return console.log('entro')
 
