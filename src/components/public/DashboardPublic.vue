@@ -244,7 +244,7 @@ export default {
 
         // Funcion de los modelos categoria y precio de la base de datos
         const publicModels = async () => {
-            await fetch('https://api-rootshare.onrender.com/public/models')
+            await fetch('https://api-rootshare.up.railway.app/public/models')
                 .then(async res => {
                     const resDB = await res.json()
                     categories.value = resDB.categories

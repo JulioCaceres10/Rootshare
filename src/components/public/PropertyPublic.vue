@@ -203,7 +203,7 @@ const sendMessage = async () => {
     if (!valid.valid) return
 
     // enviar mensaje
-    await fetch(`https://api-rootshare.onrender.com/public/property/${route.params.id}`, {
+    await fetch(`https://api-rootshare.up.railway.app/public/property/${route.params.id}`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -223,7 +223,7 @@ const sendMessage = async () => {
 
 
 onMounted(async () => {
-    const response = await fetch(`https://api-rootshare.onrender.com/public/property/${route.params.id}`, {
+    const response = await fetch(`https://api-rootshare.up.railway.app/public/property/${route.params.id}`, {
         method: "GET",
         headers: {
             'authToken': store.state.token

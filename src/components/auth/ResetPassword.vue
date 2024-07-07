@@ -73,7 +73,7 @@ const newPassword = async () => {
 
 const submit = handleSubmit(async values => {
     const token = route.params.token
-    await fetch(`https://api-rootshare.onrender.com/auth/initialize/recovery/${token}`, {
+    await fetch(`https://api-rootshare.up.railway.app/auth/initialize/recovery/${token}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ const submit = handleSubmit(async values => {
 
 onBeforeMount(async () =>{
     const token = route.params.token
-    await fetch(`https://api-rootshare.onrender.com/auth/initialize/recovery/${token}`, { 
+    await fetch(`https://api-rootshare.up.railway.app/auth/initialize/recovery/${token}`, { 
         })
         .then( async res => {
             const resDB = await res.json()

@@ -146,7 +146,7 @@ const email = useField('email')
 const password = useField('password')
 
 const submit = handleSubmit(async values => {
-    await fetch('https://api-rootshare.onrender.com/auth/login', {
+    await fetch('https://api-rootshare.up.railway.app/auth/login', {
         method: 'POST',
         credentials: 'include',
         headers: {

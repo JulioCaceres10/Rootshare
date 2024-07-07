@@ -253,7 +253,7 @@ const postProperty = (e, item) => {
 
 // funcion fetch para mostrar los mensajes
 const messagesProperty = async (id) => {
-    await fetch(`https://api-rootshare.onrender.com/public/messages/${id}`,{
+    await fetch(`https://api-rootshare.up.railway.app/public/messages/${id}`,{
       method: "GET",
       credentials: 'include',
       headers: {
@@ -301,7 +301,7 @@ const editProperty = async (e, id) => {
   propertyEdit.value = e
   if (propertyEdit.value) { await dbModels() } else return
 
-  await fetch(`https://api-rootshare.onrender.com/admin/property/edit/${id}`, {
+  await fetch(`https://api-rootshare.up.railway.app/admin/property/edit/${id}`, {
     headers: {
       'authToken': store.state.token
     }
@@ -317,7 +317,7 @@ const postPropertyEdit = async (imgBoolean) => {
   const valid = await form.value.validate()
   if (!valid.valid) return
 
-  await fetch(`https://api-rootshare.onrender.com/admin/property/edit/${idProperty.value}`, {
+  await fetch(`https://api-rootshare.up.railway.app/admin/property/edit/${idProperty.value}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
@@ -340,7 +340,7 @@ const postPropertyEdit = async (imgBoolean) => {
 
 // traer informacion de los precios y categorias para la propiedad
 const dbModels = async () => {
-  await fetch('https://api-rootshare.onrender.com/admin/property/models', {
+  await fetch('https://api-rootshare.up.railway.app/admin/property/models', {
     headers: {
       "content-Type": "application/json",
       "authToken": store.state.token

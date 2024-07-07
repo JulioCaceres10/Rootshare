@@ -2,7 +2,7 @@ import store from "@/store";
 
 const authToken = async (token) => {
   let error = false;
-  await fetch("https://api-rootshare.onrender.com/admin", {
+  await fetch("https://api-rootshare.up.railway.app/admin", {
     credentials: "include",
     headers: {
       "content-Type": "application/json",

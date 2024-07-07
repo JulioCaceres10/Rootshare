@@ -219,7 +219,7 @@ const city = useField('city')
 
 // crea la propiedad
 const submit = handleSubmit(async values => {
-    await fetch('https://api-rootshare.onrender.com/admin/property/creation', {
+    await fetch('https://api-rootshare.up.railway.app/admin/property/creation', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -253,7 +253,7 @@ const upload = async () => {
         }
     }
     uploadImage.value = false
-    await fetch(`https://api-rootshare.onrender.com/admin/property/image/${idImage}`, {
+    await fetch(`https://api-rootshare.up.railway.app/admin/property/image/${idImage}`, {
         method: 'POST',
         headers: {
             'authToken': store.state.token
@@ -285,7 +285,7 @@ const actionProperty = async (e) => {
 
 // Funcion de los modelos categoria y precio de la base de datos
 const dbModels = async () => {
-    await fetch('https://api-rootshare.onrender.com/admin/property/models', {
+    await fetch('https://api-rootshare.up.railway.app/admin/property/models', {
         headers: {
             "content-Type": "application/json",
             "authToken": store.state.token

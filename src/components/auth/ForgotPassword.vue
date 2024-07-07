@@ -46,7 +46,7 @@ const { handleSubmit, handleReset } = useForm({
 const email = useField('email')
 
 const submit = handleSubmit( async values => {
-    await fetch('https://api-rootshare.onrender.com/auth/reset/password', {
+    await fetch('https://api-rootshare.up.railway.app/auth/reset/password', {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json'

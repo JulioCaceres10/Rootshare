@@ -24,7 +24,7 @@ export default defineComponent({
 
     methods: {
         async dashboard() {
-            const resDB = await fetch("https://api-rootshare.onrender.com/public/")
+            const resDB = await fetch("https://api-rootshare.up.railway.app/public")
             try {
                 const res = await resDB.json()
                 store.commit('setDashBoard', res)

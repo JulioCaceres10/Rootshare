@@ -26,7 +26,7 @@ let verifiedToken = ref({
 onBeforeMount(async () => {
     const route = useRoute()
     const token = route.params.token
-    await fetch(`https://api-rootshare.onrender.com/auth/confirmation/${token}`, { 
+    await fetch(`https://api-rootshare.up.railway.app/auth/confirmation/${token}`, { 
             method: 'PUT'
         })
         .then( async res => {

@@ -148,7 +148,7 @@ const user = async (e) => {
     if(e) drawer.value = !drawer.value
 
      // datos de propiedades
-     const resDB = await fetch("https://api-rootshare.onrender.com/admin/properties", {
+     const resDB = await fetch("https://api-rootshare.up.railway.app/admin/properties", {
         headers: {
             'authToken': store.state.token,
         },
@@ -172,7 +172,7 @@ const user = async (e) => {
     infoProperties.value.published = published
 
     // traer informacion del usuario
-    const response = await fetch('https://api-rootshare.onrender.com/admin', {
+    const response = await fetch('https://api-rootshare.up.railway.app/admin', {
         headers: {
             'Content-Type': 'application/json',
             'authToken': store.state.token

@@ -33,7 +33,7 @@ export default defineComponent({
         ...mapActions(['actionsProperties']),
         async database() {
             if (store.state.token !== null) {
-                const resDB = await fetch("https://api-rootshare.onrender.com/admin/properties", {
+                const resDB = await fetch("https://api-rootshare.up.railway.app/admin/properties", {
                     headers: {
                         'authToken': store.state.token,
                     },

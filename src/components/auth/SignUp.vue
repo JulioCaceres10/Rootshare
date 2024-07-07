@@ -188,7 +188,7 @@ const singUp = async () => {
 
 const submit = handleSubmit(async (values) => {
     try {
-        const res = await fetch('https://api-rootshare.onrender.com/auth/register',
+        const res = await fetch('https://api-rootshare.up.railway.app/auth/register',
             {
                 method: 'POST',
                 headers: {

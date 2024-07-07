@@ -131,7 +131,7 @@ const upload = async (e) => {
         }
     }
     props.methodImg(false)
-    await fetch(`https://api-rootshare.onrender.com/admin/property/image/${e}`, {
+    await fetch(`https://api-rootshare.up.railway.app/admin/property/image/${e}`, {
         method: 'POST',
         headers: {
             'authToken': store.state.token
@@ -161,7 +161,7 @@ const published = async (item) => {
             boolean: true
         }
     }
-    await fetch(`https://api-rootshare.onrender.com/admin/property/published/${item.id}`, {
+    await fetch(`https://api-rootshare.up.railway.app/admin/property/published/${item.id}`, {
         method: 'PUT',
         headers: {
             'authToken': store.state.token
@@ -179,7 +179,7 @@ const published = async (item) => {
 
 // funcion fetch para eliminar propiedad
 const deleteProperty = async (id) => {
-    await fetch(`https://api-rootshare.onrender.com/admin/property/delete/${id}`,{
+    await fetch(`https://api-rootshare.up.railway.app/admin/property/delete/${id}`,{
         method: 'DELETE',
         headers: { 
             'authToken': store.state.token
@@ -210,7 +210,7 @@ const formatDate = (date) => {
 
 // actualizar datos
 const database = async () => {
-    const resDB = await fetch("https://api-rootshare.onrender.com/admin/properties", {
+    const resDB = await fetch("https://api-rootshare.up.railway.app/admin/properties", {
         headers: {
             'authToken': store.state.token,
         },
