@@ -1,5 +1,6 @@
 # Rootshare
 Aplicación web de bienes raices
+
  `Vue` `Node` `Express` `MySql` 
 
 
