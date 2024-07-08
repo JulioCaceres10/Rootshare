@@ -1,10 +1,14 @@
 # Rootshare
-Aplicacion web, bienes raices
+Aplicación web de bienes raices
+ `Vue` `Node` `Express` `MySql` 
 
-### main: Backend con NodeJS
-### master: Frontend con vueJS
-===
-# frontend
+
+### Características
+- Todas las operaciones CRUD
+- Subida de Imágenes
+- Autenticación con JWT
+- Filtrar raíz por categoría y rango de precios.
+- Creación de usuarios
 
 ## Project setup
 ```
